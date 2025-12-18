@@ -1,0 +1,19 @@
+[project]
+name = "llms-from-scratch"
+version = "0.1.0"
+description = "Coding exercises from the book 'Build a Large Language Model (From Scratch)' by Sebastian Raschka"
+readme = "README.md"
+requires-python = ">=3.9,<3.14"
+dependencies = [
+  "torch>=2.2.2; sys_platform == 'darwin' and platform_machine == 'arm64'",  # YOUR M1 - just this line!
+  "jupyterlab>=4.0",
+  "tiktoken>=0.5.1",
+  "matplotlib>=3.7.1",
+  "tensorflow>=2.18.0; sys_platform == 'darwin' and platform_machine == 'arm64'",
+  "tqdm>=4.66.1",
+  "numpy>=1.26",
+  "pandas>=2.2.1",
+  "psutil>=5.9.5",
+]
+[tool.uv]
+environments = ["sys_platform == 'darwin'"]
